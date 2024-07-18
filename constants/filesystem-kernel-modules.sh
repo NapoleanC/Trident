@@ -12,4 +12,9 @@ filesystem_kernel_modules=(
     "udf"
 
     "usb-storage"
+
+    "dccp"
+    "tipc"
+    "rds"
+    "sctp"
 )

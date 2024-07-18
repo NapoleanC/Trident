@@ -1,0 +1,26 @@
+# Written by: Christopher Gholmieh
+# Constants:
+declare -A secure_shell_parameters=(
+    ["HostbasedAuthentication"]="no"
+    ["PermitUserEnvironment"]="no"
+    ["PermitEmptyPasswords"]="no"
+    ["GSSAPIAuthentication"]="no"
+    ["ClientAliveInterval"]="15"
+    ["ClientAliveCountMax"]="3"
+    ["DisableForwarding"]="yes"
+    ["AllowTcpForwarding"]="no"
+    ["PermitRootLogin"]="no"
+    ["LoginGracetime"]="60"
+    ["X11Forwarding"]="no"
+    ["KexAlgorithms"]="curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,sntrup4591761x25519-sha512@tinyssh.org"
+    ["IgnoreRhosts"]="yes"
+    ["MaxAuthTries"]="3"
+    ["MaxSessions"]="3"
+    ["MaxStartups"]="10:30:60"
+    ["LogLevel"]="VERBOSE"
+    ["Ciphers"]="aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com"
+    ["UsePAM"]="yes"
+    ["Banner"]="/etc/issue.net"
+    ["MACs"]="HMAC-SHA1,HMAC-SHA2-256,HMAC-SHA2-384,HAC-SHA2-512"
+    ["Port"]="55500"
+)
