@@ -14,7 +14,7 @@ function main() {
     else
         echo "Configuring OpenSSH Server.."
 
-        temporary = $(mktemp) || echo { echo "Failed to create a temporary file."; return 1; }
+        temporary=$(mktemp) || { echo "Failed to create a temporary file."; return 1; }
 
         for secure_shell_parameter in "${!secure_shell_parameters[@]}"; do
             echo "${secure_shell_parameter}" = "${secure_shell_parameters[${secure_shell_parameter}]}" >> "${temporary}"
