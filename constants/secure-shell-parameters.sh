@@ -21,6 +21,5 @@ declare -A secure_shell_parameters=(
     ["Ciphers"]="aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com"
     ["UsePAM"]="yes"
     ["Banner"]="/etc/issue.net"
-    ["MACs"]="HMAC-SHA1,HMAC-SHA2-256,HMAC-SHA2-384,HAC-SHA2-512"
-    ["Port"]="55500"
+    ["Port"]="5500"
 )

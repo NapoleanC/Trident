@@ -13,6 +13,8 @@ function main() {
     systemctl enable --now ufw
     ufw enable
 
+    ufw --force reset
+
     ufw allow in on lo
     ufw allow out on lo
 

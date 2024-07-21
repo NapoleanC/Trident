@@ -27,5 +27,6 @@ malicious_services=(
     "nfs-kernel-server"
     "ypserv"
 
+    "bluetooth"
     "xinetd"
 )
