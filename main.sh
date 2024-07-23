@@ -40,6 +40,18 @@ function main() {
     if [[ $(prompt "[*] Would you like to run the secure-shell-parameters script [y/N]: ") == "1" ]]; then
         ./scripts/secure-shell-parameters.sh
     fi
+
+    if [[ $(prompt "[*] Would you like to run the postfix-parameters script? [y/N]: ") == "1" ]]; then
+        ./scripts/postfix-parameters.sh
+    fi
+
+    if [[ $(prompt "[*] Would you like to run the usb-guard script? [y/N]: ") == "1" ]]; then
+        ./scripts/usb-guard.sh
+    fi
+
+    if [[ $(prompt "[*] Would you like to run the hardening script? [y/N]: ") == "1" ]]; then
+        ./scripts/hardening.sh
+    fi
 }
 
 # Main:
