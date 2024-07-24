@@ -4,6 +4,9 @@ mallicious_packages=(
     # Postgresql:
     "postgresql"
 
+    # LinuxdCPP:
+    "linuxdcpp"
+
     # Pure-FTPd:
     "pure-ftpd-common"
     "pure-ftpd"
