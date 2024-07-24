@@ -13,8 +13,6 @@ function main() {
     systemctl enable --now ufw
     ufw enable
 
-    ufw --force reset
-
     ufw allow in on lo
     ufw allow out on lo
 
@@ -36,7 +34,6 @@ function main() {
     ufw default deny routed
 
     systemctl restart ufw
-    ufw reload
 }
 
 # Main:
