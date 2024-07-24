@@ -62,6 +62,8 @@ declare -A kernel_parameters=(
     ["net.ipv4.tcp_syncookies"]="1"
     ["net.ipv4.ip_forward"]="0"
 
+    ["net.ipv4.tcp_rfc1337"]="1"
+
     # Miscellaneous:
     ["dev.tty.ldisc_autoload"]="0"
 
