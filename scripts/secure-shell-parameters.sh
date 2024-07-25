@@ -17,7 +17,7 @@ function main() {
         temporary=$(mktemp) || { echo "Failed to create a temporary file."; return 1; }
 
         for secure_shell_parameter in "${!secure_shell_parameters[@]}"; do
-            echo "${secure_shell_parameter}" = "${secure_shell_parameters[${secure_shell_parameter}]}" >> "${temporary}"
+            echo "${secure_shell_parameter}" "${secure_shell_parameters[${secure_shell_parameter}]}" >> "${temporary}"
         done
 
         if [[ $(prompt "Check /etc/ssh/sshd_config and make there is nothing important. Would you like to override the settings with more secure parameters? [y/N]: ") == "1" ]]; then
