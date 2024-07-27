@@ -488,4 +488,9 @@ mallicious_packages=(
     "gnome-mines"
     "aisleriot"
     "wesnoth"
+
+    # Miscellaneous:
+    "sucrack"
+    "changeme"
+    "pvpgn"
 )
