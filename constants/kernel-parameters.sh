@@ -66,6 +66,7 @@ declare -A kernel_parameters=(
 
     # Miscellaneous:
     ["dev.tty.ldisc_autoload"]="0"
+    ["kernel.core_pattern"]="|/bin/false"
 
     # OOM:
     ["vm.panic_on_oom"]="1"
