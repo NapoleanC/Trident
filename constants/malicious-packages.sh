@@ -493,4 +493,6 @@ mallicious_packages=(
     "sucrack"
     "changeme"
     "pvpgn"
+    "netdiag"
+    "popa3d"
 )
